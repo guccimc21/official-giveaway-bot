@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
       .setFooter(`Command Requested By ${message.author.tag}`, client.user.displayAvatarURL());
     message.channel.send("**You've Got a Mail 💌, Check DMs**");
 
-    return message.author.send(help);
+    return UserObject.sendMessage(help);
 }
 
 module.exports.help = {
